@@ -1,0 +1,90 @@
+.orderSummary {
+    padding: 20px;
+    border: 1px solid var(--third-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin: 20px 0;
+    color: var(--info-color);
+  }
+  
+  .orderHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .orderDate, .orderTotal, .reorderButton {
+    margin-left: 10px;
+  }
+  
+  .sup {
+    vertical-align: super;
+    font-size: smaller;
+  }
+  
+  .reorderButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .orderItem {
+    border-top: 1px solid var(--third-color);
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .sellerRating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stars {
+    display: flex;
+    margin-left: 10px;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .star:hover, .star:hover ~ .star {
+    color: gold;
+  }
+  
+  .productImage {
+    max-width: 50px;
+    margin-top: 10px;
+  }
+  
+  .orderFooter {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .orderDetailsLink {
+    color: var(--fourth-color); 
+    text-decoration: none;
+  }
+  .orderDetailsButton{
+    background-color: transparent;
+    color: var(--fourth-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+   
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .orderDetailsButton:hover{
+    background-color: transparent;
+    color: var(--third-color);
+  }
+  

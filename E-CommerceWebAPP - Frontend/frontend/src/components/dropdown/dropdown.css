@@ -1,0 +1,138 @@
+.sweet-categories {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dropdown-category {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--info-color);
+  font-size: large;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.dropdown-toggle::after {
+  content: '\25BC';
+  margin-left: 5px;
+  font-size: 0.7em;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  min-width: 150px;
+  display: none;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  border: solid var(--third-color);
+  border-width: 0px 2px 2px 2px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.175);
+  margin-top: 10px;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  font-weight: 400;
+  color: var(--info-color);
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: var(--success-color);
+}
+
+.dropdown-subcategory:last-child .dropdown-item:hover {
+  background-color: var(--success-color);
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .sweet-categories {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    font-size: medium;
+    padding: 8px;
+  }
+
+  .dropdown-menu {
+    min-width: 130px;
+  }
+
+  .dropdown-item {
+    padding: 6px 15px;
+  }
+  .categories-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+/* MOBILE*/
+@media (max-width: 480px) {
+  .sweet-categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    gap: 5px;
+    justify-content: flex-start;
+  }
+
+  .dropdown-category {
+    max-width: 70px;
+  }
+
+  .categories-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 5px;
+  }
+
+  .dropdown-toggle {
+    font-size: 0.7rem;
+    padding: 8px;
+  }
+
+  .dropdown-menu {
+    min-width: 100px;
+    right: 0;
+    position: absolute;
+    left: 0;
+    display: none;
+    z-index: 1000;
+  }
+
+  .dropdown-item {
+    padding: 5px 10px;
+  }
+}

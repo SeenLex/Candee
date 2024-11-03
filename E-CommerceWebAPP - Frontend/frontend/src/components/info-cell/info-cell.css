@@ -1,0 +1,150 @@
+.info-cell{
+    width: 400px;
+    height: 200px;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--gray-color);
+    box-shadow: 2px 2px 2px var(--gray-color);
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--info-color);
+}
+.info-cell h2{
+    color: var(--third-color);
+}
+
+.info-cell-content{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-cell-big{
+    width: 600px;
+    height: 90%;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--gray-color);
+    box-shadow: 2px 2px 2px var(--gray-color);
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--info-color);
+}
+.info-cell-big h2{
+    color: var(--third-color);
+}
+
+.edit-info-button{
+    width: 100px;
+    height: 30px;
+
+    background-color: var(--info-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: medium;
+    border: none;
+    border-radius: 15px;
+
+    margin-top: 5%;
+}
+
+.edit-info-button-big{
+    width: 100px;
+    height: 30px;
+
+    background-color: var(--info-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: medium;
+    border: none;
+    border-radius: 15px;
+
+    margin-top: 9%;
+}
+
+.edit-info-button:hover{
+    cursor: pointer;
+    background-color: #ffa807;
+    box-shadow: 2px 2px 2px var(--dark-color);
+}
+
+.edit-info-button-big:hover{
+    cursor: pointer;
+    background-color: #ffa807;
+    box-shadow: 2px 2px 2px var(--dark-color);
+}
+@media (max-width: 768px) {
+    .info-cell {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    .info-cell-content {
+        height: auto;
+    }
+
+    .info-cell h2 {
+        font-size: 1.2rem;
+    }
+
+    .info-cell-big {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    .edit-info-button, .edit-info-button-big {
+        width: 90px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+
+    .edit-info-button-big {
+        margin-top: 7%;
+    }
+}
+@media (max-width: 480px) {
+    .info-cell {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 15px;
+    }
+
+    .info-cell h2 {
+        font-size: 1rem;
+    }
+
+    .info-cell-content {
+        height: auto;
+    }
+
+    .info-cell-big {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 15px;
+    }
+
+    .edit-info-button, .edit-info-button-big {
+        width: 80px;
+        height: 26px;
+        font-size: 0.8rem;
+    }
+
+    .edit-info-button-big {
+        margin-top: 5%;
+    }
+}

@@ -1,0 +1,54 @@
+
+.distributor-profile-main-container{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color: var(--secondary-color);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container{
+    height: 10%;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-bottom: solid 1px var(--gray-color);
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 100px 0 60px;
+}
+
+.top-container button{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--danger-color);
+    color: var(--light-color);
+    font-size: medium;
+    font-weight: 600;
+
+    margin-left: auto;
+}
+
+.distributor-info-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.user-info{
+    width: 80%;
+    height: 90%;
+}
+
+.top-container button:hover{
+    cursor: pointer;
+    background-color: var(--light-danger-color);
+}

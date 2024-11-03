@@ -1,0 +1,38 @@
+.user-profile-main-container{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color: var(--secondary-color);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container{
+    height: 10%;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-bottom: solid 1px var(--third-color);
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px 0 60px;
+}
+.top-container h2{
+    color: var(--info-color);
+}
+
+
+.user-info-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.user-info{
+    width: 80%;
+    height: 90%;
+}

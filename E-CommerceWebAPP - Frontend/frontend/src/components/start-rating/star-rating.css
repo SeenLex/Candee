@@ -1,0 +1,15 @@
+.star-rating-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.star-rating-container h3{
+    color: var(--info-color);
+}
+
+.stars-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

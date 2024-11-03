@@ -1,0 +1,209 @@
+.my-reviews-menu{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.my-reviews-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--info-color);
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    background-color: transparent;
+}
+.reviews-container{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+}
+.review-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--primary-color);
+    font-size: 1.5rem;
+}
+.product-name{
+    color: var(--fourth-color);
+    font-size: 1.1rem;
+    margin: 10px;
+}
+.review-item{
+    width: 1000px;
+    height: auto;
+    padding: 5px 20px;
+    border: 1px solid var(--info-color);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px var(--gray-color);
+    background: linear-gradient(249deg, rgba(233,235,242,1) 0%, rgba(255,255,255,1) 0%, rgba(160,242,242,1) 17%, rgba(242,187,227,1) 35%, rgba(157,133,242,1) 76%, rgba(89,89,89,1) 99%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+}
+.review-item img{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin-top : 10px;
+    border-radius: 15px;
+    padding: 5px;
+}
+.review-item img:hover{
+    transform: scale(1.1);
+}
+.review-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+.review-title{
+    color: var(--third-color);
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.review-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.review-content{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: var(--info-color);
+    margin: 20px;
+}
+.review-date {
+    padding:10px;
+    color: var(--info-color);
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.review-actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review-actions svg {
+    cursor: pointer;
+    font-size: 40px;
+    color:var(--primary-color);
+    
+}
+.review-actions svg:hover {
+    color: var(--third-color);
+}
+@media (max-width: 768px) {
+    .review-item {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .review-content {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .review-info {
+        font-size: 1.2rem;
+    }
+
+    .review-item img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .my-reviews-header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .reviews-container {
+        gap: 30px;
+    }
+
+    .review-actions {
+        margin-top: 10px;
+    }
+    .reeview-content{
+        width: 100%;
+        font-size: 1.5rem;;
+    }
+}
+@media (max-width: 480px) {
+    .reviews-header {
+        padding: 10px;
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .reviews-container {
+        gap: 20px;
+      }
+    
+      .review-item {
+        width: 220px;
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 10px;
+      }
+     
+    
+      .review-content {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 1rem;
+      }
+    
+      .review-info {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .product-name {
+        font-size: 1rem;
+        margin: 5px 0;
+      }
+      .review-product img{
+        width: 80px;
+        height: 80px;
+      }
+    
+      
+    
+      .review-replies-container {
+        width: 100%;
+      }
+    
+
+      .reviews-actions svg,
+      .reply-actions svg {
+        font-size: 25px;
+      }
+    
+}

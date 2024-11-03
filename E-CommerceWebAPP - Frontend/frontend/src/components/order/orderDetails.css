@@ -1,0 +1,167 @@
+.order-container {
+    height: auto;
+    font-family: Arial, sans-serif;
+    color: var(--info-color);
+    background-color: var(--secondary-color);
+  }
+  
+  .breadcrumb {
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  .order-details{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    min-height: 80vh;
+    gap: 20px;
+  }
+  
+  .order-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .order-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .order-info p {
+    margin: 0;
+  }
+  
+  .products-sold h2 {
+    background-color: #e8f4fc;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .product-details {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: var(--primary-color);
+  }
+  
+  .delivery-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .delivery-info h3 {
+    margin: 0;
+  }
+  
+  .history-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delivery-modalities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  .delivery-modalities > div {
+    width: 30%;
+  }
+  
+  .delivery-modalities h4 {
+    margin-bottom: 10px;
+  }
+  
+  .product-item {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .product-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .product-description {
+    flex-grow: 1;
+  }
+  
+  .product-price, .product-quantity {
+    font-weight: bold;
+  }
+  
+  .order-summary {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: right;
+    background-color: var(--primary-color);
+  }
+  
+  .order-summary p {
+    margin: 5px 0;
+  }
+  
+  .order-summary span {
+    font-weight: bold;
+  }
+  .order-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+  }
+  .btn-confirm {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px ;
+    cursor: pointer;
+    border-radius: 5px;
+  
+
+  }
+  .btn-cancel {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  
+  .rating-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .rating-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

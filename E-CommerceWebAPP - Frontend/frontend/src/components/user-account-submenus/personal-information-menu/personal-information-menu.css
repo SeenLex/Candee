@@ -1,0 +1,218 @@
+.personal-info-menu{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: var(--info-color);
+}
+
+.small-data-cells{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.medium-data-cells{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.big-data-cells{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.info-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 50px;
+}
+
+.info-wrapper input{
+    height: 25px;
+    width: 250px;
+    padding: 2px 5px;
+
+    border: none;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    color: var(--gray-color);
+    font-weight: 800;
+}
+
+.info-wrapper input:focus{
+    box-shadow: 3px 3px 3px ;
+}
+
+.address-data-display{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 5px;
+}
+
+.name-data-display{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-info-text {
+    color: #5a6064;
+    font-size: large;
+    font-weight: 800;
+}
+
+.address-info-text p{
+    font-size: large;
+    font-weight: 800;
+}
+
+.name-info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name-info-text p{
+    color: #5a6064;
+    font-size: large;
+    font-weight: 800;
+}
+
+.address-info-text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.info-cell-small{
+    width: 400px;
+    height: 80%;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--gray-color);
+    box-shadow: 2px 2px 2px var(--gray-color);
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.edit-controls{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.edit-controls button{
+    width: 100px;
+    height: 30px;
+
+    background-color: var(--warning-color);
+    color: var(--gray-color);
+    font-weight: 700;
+    font-size: medium;
+    border: none;
+    border-radius: 15px;
+
+    margin-top: 5%;
+}
+
+.edit-controls button:hover{
+    cursor: pointer;
+    background-color: #ffa807;
+    box-shadow: 2px 2px 2px var(--dark-color);
+}
+@media (max-width: 768px) {
+    .small-data-cells, .medium-data-cells, .big-data-cells {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .info-wrapper {
+        gap: 30px;
+    }
+
+    .info-wrapper input {
+        width: 200px;
+        height: 22px;
+    }
+
+    .info-cell-small {
+        width: 100%;
+        height: auto;
+    }
+
+    .edit-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .edit-controls button {
+        width: 90px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+
+    .address-data-display, .address-info-text {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .small-data-cells, .medium-data-cells, .big-data-cells {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-wrapper {
+        gap: 20px;
+    }
+
+    .info-wrapper input {
+        width: 180px;
+        height: 20px;
+    }
+
+    .info-cell-small {
+        width: 100%;
+        height: auto;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+
+    .edit-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .edit-controls button {
+        width: 80px;
+        height: 26px;
+        font-size: 0.8rem;
+    }
+
+    .address-data-display, .address-info-text {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .user-info-text, .address-info-text p, .name-info-text p {
+        font-size: 1rem;
+    }
+}

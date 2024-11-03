@@ -1,0 +1,152 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height : 100vh;
+    height: auto;
+    width: 100%;
+    background-color: var(--primary-color);
+
+  }
+  .auth-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    max-width: 960px; 
+    margin-bottom: 10rem;
+  }
+  .auth-header{
+    display: flex;
+    background-color: var(--primary-color);
+    
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+    border-radius: 20px;
+
+    margin: 2rem;
+    width: 80vw;
+    max-width: 960px; 
+  }
+  
+  
+.auth-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 55vw;
+    width: 55vw;
+    padding-left: 3rem;
+  }
+  .auth-box h2 {
+    margin-bottom: 2rem;
+    color: var(--third-color);
+  }
+  .auth-box button{
+    margin-bottom: 2rem;
+  }
+  
+  .auth-image {
+   
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 30vw;
+ 
+  }
+  
+  .auth-image img {
+    
+    width: 100%;
+    height: 100%;
+  }
+  
+
+
+  
+  
+  .member-text {
+    margin-top: 1rem;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .create-account {
+    margin-top: 1rem;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .social-login {
+    margin-top: 1rem;
+  }
+  
+  .social-login p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .social-btn {
+    background-color: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .social-btn:hover {
+    background-color: #ccc;
+  }
+  @media (max-width: 768px) {
+    .auth-content {
+      flex-direction: column; 
+    }
+  
+    .auth-container, .auth-content {
+
+      height: auto;
+      gap: 5rem; 
+      padding: 20px; 
+    }
+  
+    .auth-box {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 0;
+      align-items: center;
+    }
+    
+  }
+  @media (max-width: 480px) {
+    .auth-content {
+      flex-direction: column; 
+    }
+  
+    .auth-container, .auth-content {
+      width: 100%;
+      height: auto;
+      gap: 5rem; 
+      padding: 10px;
+    }
+  
+    .auth-box {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 0;
+      align-items: center;
+    }
+    
+  }
